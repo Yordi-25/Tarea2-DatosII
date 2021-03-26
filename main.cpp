@@ -1,4 +1,3 @@
-#include <iostream>
 #include "Observer/Classes.h"
 #include "Factory/Factory.h"
 #include "Factory/Golosinas/Golosina.h"
@@ -57,7 +56,7 @@ int main() {
     std::cin.ignore();
 
     /*Observer*/
-    std::cout << "--------------------------- Observer -------------------------" << std::endl;
+    log("--------------------------- Observer -------------------------");
 
     Periodico *periodico = new Periodico();
 
@@ -70,7 +69,7 @@ int main() {
         std::string continuar;
         std::string nuevaNoticia;
         std::string cantidadDeSuscriptores = std::to_string(periodico->listaSuscriptores->size());
-        std::cout << "---> Publicar nueva noticia para " + cantidadDeSuscriptores + " suscriptores:" << std::endl;
+        log("---> Publicar nueva noticia para " + cantidadDeSuscriptores + " suscriptores:");
         std::getline(std::cin, nuevaNoticia);
 
         periodico->publicarNoticia(nuevaNoticia);
@@ -78,13 +77,13 @@ int main() {
         std::cin.clear();
         std::cin.sync();
 
-        std::cout << "---> ¿Publicar otra noticia?" << std::endl;
-        std::cout << "Sí (1)" << std::endl;
-        std::cout << "No (0)" << std::endl;
+        log("---> ¿Publicar otra noticia?");
+        log("Sí (1)");
+        log("No (0)");
         std::getline(std::cin, continuar);
         if (continuar != "1"){ corriendo = false; }
-        std::cout << "------------------------------------------------------------" << std::endl;
+        log("------------------------------------------------------------");
     }
-    std::string cantidadDeNoticias = std::to_string(suscriptor1->listaNoticias->size() );
-    std::cout << "Total de noticias publicadas: " + cantidadDeNoticias << std::endl;
+    std::string cantidadDeNoticias = std::to_string(suscriptor1->listaNoticias->size());
+    log("Total de noticias publicadas: " + cantidadDeNoticias);
 }

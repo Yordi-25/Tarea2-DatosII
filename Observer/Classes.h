@@ -2,7 +2,7 @@
 #include <iostream>
 #include "list"
 #include "string"
-#define log(message) std::cout<<message<<std::endl;
+#define log(message) std::cout<<message<<std::endl
 
 class Observador {
 public:
