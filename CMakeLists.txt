@@ -18,4 +18,5 @@ add_executable(Tarea2_DatosII
         Factory/FactoryDulce.h
         Factory/FactorySalada.cpp
         Factory/FactorySalada.h
-        Factory/MaquinaExpendedoraMain.cpp)
+		Observer/Periodico.cpp Observer/Classes.h main.cpp Observer/Suscriptor.cpp)
+
