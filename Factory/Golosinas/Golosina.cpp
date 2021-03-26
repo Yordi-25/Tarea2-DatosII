@@ -1,5 +1,8 @@
 #include "Golosina.h"
 
+/*
+ * Clase Padre de los posibles elementos expendibles
+ */
 Golosina::Golosina(int numPrecio, std::string sabbor){
     precio = numPrecio;
     sabor = sabbor;

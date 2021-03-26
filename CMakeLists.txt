@@ -18,4 +18,4 @@ add_executable(Tarea2_DatosII
         Factory/FactoryDulce.h
         Factory/FactorySalada.cpp
         Factory/FactorySalada.h
-        Factory/MaquinaExpendedoraMain.cpp Factory/FactoryMani.cpp Factory/FactoryMani.h)
+        Factory/MaquinaExpendedoraMain.cpp)

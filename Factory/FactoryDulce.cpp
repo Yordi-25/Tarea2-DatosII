@@ -1,8 +1,12 @@
 #include "FactoryDulce.h" 
-        
+
+FactoryDulce::FactoryDulce(){
+    golosinasPorBolsa = 10;
+}
+
 Golosina* FactoryDulce::crearGolosinas() {
-    Golosina* arrayGolosinas = new Golosina[10];
-    for (int i = 0; i < 10; i++) {
+    Golosina* arrayGolosinas = new Golosina[this->getGOLOSINAS_POR_BOLSA()];
+    for (int i = 0; i < this->getGOLOSINAS_POR_BOLSA(); i++) {
         int randomNumber = rand() % 100 + 1;
         if (randomNumber <= 50) {
             Bombon bombon("fresa");
@@ -12,6 +16,5 @@ Golosina* FactoryDulce::crearGolosinas() {
             arrayGolosinas[i] = dulce;
         }
     }
-
     return arrayGolosinas;
 }

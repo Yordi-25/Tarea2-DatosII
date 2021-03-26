@@ -2,6 +2,8 @@
 
 #ifndef TAREA2_DATOSII_GOLOSINA_H
 #define TAREA2_DATOSII_GOLOSINA_H
+
+
 class Golosina{
     protected:
         int precio;

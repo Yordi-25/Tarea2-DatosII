@@ -7,7 +7,7 @@
 class FactoryDulce: public Factory{
     public:
         Golosina* crearGolosinas();
-        
+        FactoryDulce();
 };
 
 #endif
